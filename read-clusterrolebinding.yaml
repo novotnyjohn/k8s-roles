@@ -1,0 +1,15 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: read
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: read
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: 5b5d8223-817c-46aa-bc97-b9d0db377e43
+- apiGroup: rbac.authorization.k8s.io
+  kind: Group
+  name: 8dfa839f-5043-4da2-bb90-22fe33bb457b
